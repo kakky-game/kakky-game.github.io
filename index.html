@@ -5,7 +5,7 @@
 </head>
 <body>
 <b>かっきーのゲームチャンネル</b>です。<br>どうぞゆっくりしていってください！！
-<h1>第一章 かっきーのゲームチャンネル</h1>
+<h1>1. かっきーのゲームチャンネル</h1>
 <h2>1.1 かっきーのゲームチャンネルとは</h2>
 <p>ブラウザとは本をパラパラ・・・</p>
 <h2>1.2 HTMLとは</h2>
@@ -14,6 +14,77 @@
 テキストの一部分を<span style="font-size:500%;">大きな文字</span>にします。<br>
 テキストの一部分を<span style="color:gold;">赤い文字</span>にします。<br>
 テキストの一部分を <span style="font-family:'ＭＳ 明朝'">明朝体</span> にします。<br>
+
+
+<script>
+window.onload = function() {
+  alert("Welcome to my homepage!!");
+}
+</script>
+
+<input type="button" value="Click me!" onclick="alert('OK')">
+<span onclick="alert('OK')">Click me!</span>
+
+<script>
+window.addEventListener("load", function() {
+    setInterval(function() {
+        alert("やほー!");
+    }, 5000);
+});
+</script>
+
+
+<a href="xx.htm" onmouseover="alert('IN')">☆☆</a>
+
+<br>
+
+<a href="xx.htm" onmouseout="alert('OUT')">☆☆</a>
+
+<section>
+  <h1>第１章 HTML入門</h1>
+  <section>
+    <h2>1.1 HTMLとは</h2>
+    <p>HTML は HyperText Markup Language の略で・・・</p>
+  </section>
+  <section>
+    <h2>1.2 CSSとは</h2>
+    <p>CSS は Cascading Style Sheets の略で・・・</p>
+  </section>
+</section>
+
+<p>この部分がひとつの段落になります。</p>
+<p>この部分が次の段落になります。</p>
+
+<style>
+p { text-indent: 1em; }
+</style>
+
+<hr>
+<hr style="width:300px">
+<hr style="width:300px; margin-left:0">
+<hr style="width:300px; margin-right:0">
+<hr style="height:5px; background-color:#66f">
+<hr style="height:5px; background-color:#66f; border:0">
+
+<div style="background-color:gray; width:2px; height:40px;"></div>
+
+
+<div style="border:1px solid gray; padding:5px;">
+あああああ
+</div>
+
+<html xmlns:v="urn:schemas-microsoft-com:vml"> 
+<head>
+<title>VML TEST</title>
+<style>
+v\:* { behavior: url(#default#VML); }
+</style>
+</head>
+<body>
+<v:line from="0,100" to="300,100" strokecolor="black" />
+<v:line from="0,100" to="0,0" strokecolor="black" />
+</body>
+</html>
 
 <ul>
 <li>りんご</li>
@@ -78,6 +149,15 @@
 <br>
 
 <a href="xx.htm"><img src="ankgx-r04kr.gif" width=443 height=226 alt="説明"></a>
+
+
+<br>
+
+<div style="background-image:url(ankgx-r04kr.gif); width:443; height:226; text-align:center; color:red;">
+かっきーのゲームチャンネル
+</div>
+
+
 
 </body>
 </html>

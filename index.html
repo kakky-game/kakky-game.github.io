@@ -7,20 +7,57 @@
 <b>かっきーのゲームチャンネル</b>です。<br>どうぞゆっくりしていってください！！
 <h1>1. かっきーのゲームチャンネル</h1>
 <h2>1.1 かっきーのゲームチャンネルとは</h2>
-<p>ブラウザとは本をパラパラ・・・</p>
-<h2>1.2 HTMLとは</h2>
-<p>HTML とは HyperText Markup Language の略で・・・</p>
+<p>
+小さい頃から様々なゲームをしてきて、ゲームが大好きなかっきーさんです。<br>
+そんなゲームの楽しさを伝えるために、いろいろなゲームを実況しています。<br>
+</p>
+<h2>1.2 動画内容とは</h2>
+<p>さまざまなゲームを実況しています。<br>
+下記にその一例として実況しているゲームタイトルを挙げています。<br>
+<ul>
+<li>戦国無双4</li>
+<li>ペーパマリオ オリガミキング</li>
+<li>ゼルダ無双 厄災の黙示録</li>
+<li>ポケットモンスター ソード＆シールド 冠の雪原</li>
+<li>ポケットモンスター ソード＆シールド 鎧の孤島</li>
+<li>Ghost of tushima</li>
+<li>ヨッシーアイランド</li>
+<li>世界のアソビ大全51</li>
+<li>星のカービィ スーパーデラックス</li>
+<li>ニンジャラ</li>
+<li>モンハンワールド</li>
+<li>APEX LEGENDS</li>
+</ul>
+この他にもゲーム実況してほしいゲームがありましたら受け付けますので、<br>
+Youtubeやtwitterでコメントいただければと思います。<br>
+</p>
 テキストの一部分を<b>太字</b>にします。<br>
 テキストの一部分を<span style="font-size:500%;">大きな文字</span>にします。<br>
 テキストの一部分を<span style="color:gold;">赤い文字</span>にします。<br>
 テキストの一部分を <span style="font-family:'ＭＳ 明朝'">明朝体</span> にします。<br>
 
+<br>
 
+<script>
+window.addEventListener("load", function() {
+    window.setInterval(function() {
+        var d = new Date();
+        document.getElementById('timer').innerHTML = d.toLocaleString();
+    }, 1000);
+});
+</script>
+<div id="timer"></div>
+
+<br>
+
+
+<!-- 無効化
 <script>
 window.onload = function() {
   alert("Welcome to my homepage!!");
 }
 </script>
+-->
 
 <audio id="audio1" src="65.mp3" autoplay loop></audio>
 <input type="button" value="曲を再生する" onclick="document.getElementById('audio1').play()">
@@ -31,14 +68,16 @@ window.onload = function() {
 <input type="button" value="Click me!" onclick="alert('OK')">
 <span onclick="alert('OK')">Click me!</span>
 
+
+<!-- 無効化
 <script>
 window.addEventListener("load", function() {
     setInterval(function() {
         alert("やほー!");
-    }, 5000);
+    }, 10000);
 });
 </script>
-
+-->
 
 <a href="xx.htm" onmouseover="alert('IN')">☆☆</a>
 
@@ -91,6 +130,8 @@ v\:* { behavior: url(#default#VML); }
 <v:line from="0,100" to="0,0" strokecolor="black" />
 </body>
 </html>
+
+
 
 <ul>
 <li>りんご</li>
@@ -173,6 +214,69 @@ v\:* { behavior: url(#default#VML); }
 かっきーのゲームチャンネル
 </div>
 
+<div style="text-shadow: 3px 3px 2px #663333; font:32pt 'Arial'; font-weight:bold; color:#660000">
+World Wide Web
+</div>
+
+<div style="text-shadow: 1px 1px 0px #ffffff, 3px 3px 2px #663333; font:32pt 'Arial'; font-weight:bold; color:#660000">
+World Wide Web
+</div>
+
+<style>
+#tb5 { border-collapse: collapse; width: 200px; }
+#tb5 th, #tb5 td { border: 1px solid gray; }
+#tb5 th { background-color: #cfc; }
+#tb5 td { background-color: #ffc; }
+</style>
+<table id="tb5">
+ <tr><th>東京都</th><td>13,742,906</td></tr>
+ <tr><th>広島県</th><td>2,830,069</td></tr>
+</table>
+
+<br><br><br>
+
+<script>
+function check(form) {
+  if (form.name.value == "") {
+    alert("名前が入力されていません。");
+    form.name.focus();
+    return false;
+  }
+  if (form.addr.value == "") {
+    alert("住所が入力されていません。");
+    form.addr.focus();
+    return false;
+  }
+  return true;
+}
+</script>
+<form name="f1" onsubmit="return check(this)">
+  <div>名前： <input type="text" name="name"></div>
+  <div>住所： <input type="text" name="addr"></div>
+  <div><input type="radio" name="gender" checked>男性<input type="radio" name="gender">女性</div>
+  <div><select name="country">
+ <option value="Japan">日本
+ <option value="USA">米国
+ <option value="UK">英国
+</select>
+ </div>
+  <div>
+  <textarea name="msg" cols=40 rows=4>
+自由にご意見をお書きください。
+  </textarea>
+  </div>
+  <div><input type="button" onclick="alert('送信できました')" value="送信">
+<input type="button" onclick="alert('取り消ししました')" value="取消"></div>
+</form>
+
+
+
+
+<br><br><br>
+
+<script>
+document.writeln("最終更新：" + document.lastModified);
+</script>
 
 
 </body>
